@@ -3,9 +3,7 @@ function showMenu() {
 }
 
 function hideMenu() {
-  navLinks.style.right = "-200";
+  navLinks.style.right = "-200px";
 }
 
 let navLinks = document.getElementById("navLinks");
-let showMenu = onclick;
-let hideMenu = onclick;
