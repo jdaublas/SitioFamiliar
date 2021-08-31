@@ -50,7 +50,6 @@ nav {
   padding: 6px 20px;
   position: relative;
   margin-bottom: -40px;
-  background-color: ;
 }
 
 .nav-links ul li a {
@@ -73,9 +72,13 @@ nav {
   width: 100%;
 }
 img {
-  display: inline-block;
+  max-width: 600px;
+  margin-top: -40px;
+}
+
+.image img {
   max-width: 150px;
-  margin-top: 200px;
+  margin-bottom: -450px;
 }
 
 p {
