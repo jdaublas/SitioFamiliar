@@ -27,7 +27,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,200;1,300;1,700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="src/styles.css" />
+
     <title>💑 H&J</title>
   </head>
   <body>
@@ -45,63 +47,44 @@
     <section class="rsvp-us">
       <div class="row">
         <div class="col-6">
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="currentColor"
-              class="bi bi-camera-video"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"
-              />
-            </svg>
-            <span>
-              <h5>Meeting ID:</h5>
-            </span>
-          </div>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="currentColor"
-              class="bi bi-unlock"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2zM3 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1H3z"
-              />
-            </svg>
-            <span>
-              <h5>Password:</h5>
-            </span>
-          </div>
-          <div class="image">
-            <img src="images/zoom.jpeg" alt="" />
-            <span>
-              <img src="images/zoommeeting.png" alt="" />
-            </span>
+          Glen Park Hall - Leduc County
+          <div class="location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2072.9293944894084!2d-113.90562638442997!3d53.19265127994714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x539fe70061370091%3A0xa3df1a805c4dcb80!2s49004%20Range%20Rd%20274%2C%20Alberta%20T0B%203M1!5e1!3m2!1sen!2sca!4v1630697018437!5m2!1sen!2sca"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
         <div class="col-6">
           <div class="contact">
-            <form action="">
+            <form action="form-handler.php" method="post">
               <input
                 type="text"
+                name="name"
                 placeholder="Enter your complete name"
                 required
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Enter your email address"
                 required
               />
-              <input type="text" placeholder="Attending: Yes or No" required />
-              <textarea rows="8" placeholder="Message"></textarea>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Will you be Attending: Yes or No"
+                required
+              />
+              <textarea
+                rows="4"
+                name="message"
+                placeholder="Message"
+              ></textarea>
               <button type="submit" class="btn btn-primary">
                 Send Message
               </button>
@@ -110,5 +93,6 @@
         </div>
       </div>
     </section>
+    <script src="src/script.js"></script>
   </body>
 </html>

@@ -187,3 +187,10 @@ button {
   margin: 20px;
   margin-right: 15px;
 }
+
+.location {
+  width: 100%;
+  margin: auto;
+  padding: 15px 0;
+  margin-left: -50px;
+}
